@@ -1,4 +1,4 @@
-// Función para adelantar el video
+// Function to fast forward the video
 function forwardVideo() {
   let video = document.querySelector('video');
   if (video) {
@@ -6,7 +6,7 @@ function forwardVideo() {
   }
 }
 
-// Función para retroceder el video
+// Function to rewind the video
 function rewindVideo() {
   let video = document.querySelector('video');
   if (video) {
@@ -14,13 +14,13 @@ function rewindVideo() {
   }
 }
 
-// Escuchar eventos del teclado
+// Listen to keyboard events
 document.addEventListener('keydown', function(event) {
-  // Adelantar con la tecla "D"
+  // Fast forward with the "D" key
   if (event.key === 'd') {
     forwardVideo();
   }
-  // Retroceder con la tecla "A"
+  // Rewind with the "A" key
   if (event.key === 'a') {
     rewindVideo();
   }
