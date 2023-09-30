@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "YTShortsController",
+  "version": "1.0",
+  "description": "Chrome extension to add functionality of advancing and rewinding 10 seconds in the YouTube Shorts video player.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
